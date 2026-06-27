@@ -57,3 +57,11 @@ p {
 .donate {
   background: #1e5eff;
 }
+.recruit {
+  background: #b36b00;
+  font-weight: bold;
+}
+
+.recruit:hover {
+  background: #d98200;
+}
