@@ -1,54 +1,70 @@
+/* ====================== MELROSE FIRE COMPANY - RESPONSIVE CSS ====================== */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #0f0f0f;
   color: white;
   text-align: center;
+  line-height: 1.5;
 }
 
 .container {
   max-width: 520px;
-  margin: auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  padding: 20px 10px;
+  padding: 30px 10px 20px;
 }
 
 .logo img {
-  width: 90px;
+  width: 110px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 h1 {
-  font-size: 22px;
-  margin: 5px 0;
+  font-size: 24px;
+  margin: 8px 0 6px 0;
 }
 
-p {
+.tagline {
   color: #bdbdbd;
+  margin: 0;
+  font-size: 15px;
 }
 
 .card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 25px 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 14px;
 }
 
+/* Buttons */
 .btn {
   display: block;
-  padding: 14px;
+  padding: 16px 20px;
   background: #1f1f1f;
   color: white;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 12px;
+  font-size: 16.5px;
+  font-weight: 500;
+  transition: all 0.2s;
 }
 
 .btn:hover {
   background: #2a2a2a;
+  transform: translateY(-2px);
 }
 
 .primary {
@@ -56,9 +72,18 @@ p {
   font-weight: bold;
 }
 
+.primary:hover {
+  background: #d00000;
+}
+
 .donate {
   background: #1e5eff;
 }
+
+.donate:hover {
+  background: #2e70ff;
+}
+
 .recruit {
   background: #b36b00;
   font-weight: bold;
@@ -67,67 +92,38 @@ p {
 .recruit:hover {
   background: #d98200;
 }
-/* ====================== RESPONSIVE DESIGN ====================== */
 
-/* Make everything scale properly on phones and tablets */
-.container {
-    max-width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-}
+/* ====================== RESPONSIVE IMPROVEMENTS ====================== */
 
-.header {
-    text-align: center;
-    padding: 20px 10px;
-}
-
-.logo img {
-    max-width: 140px;
-    height: auto;
-}
-
-.card {
-    padding: 25px 15px;
-    margin: 10px auto;
-    max-width: 480px;
-    width: 100%;
-}
-
-/* Make buttons bigger and easier to tap on mobile */
-.btn {
-    display: block;
-    width: 100%;
-    padding: 16px 20px;
-    margin: 12px 0;
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 12px;
+  }
+  
+  .header {
+    padding: 25px 5px 15px;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  h1 {
+    font-size: 21px;
+  }
+  
+  .card {
+    padding: 22px 18px;
+  }
+  
+  .btn {
+    padding: 17px 20px;
     font-size: 17px;
-    text-align: center;
-    box-sizing: border-box;
+  }
 }
 
-/* Adjust heading sizes */
-h1 {
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-/* Tablet & larger phones */
 @media (min-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-    
-    .btn {
-        font-size: 18px;
-        padding: 18px 20px;
-    }
-}
-
-/* Very small phones */
-@media (max-width: 380px) {
-    h1 {
-        font-size: 1.6rem;
-    }
+  .container {
+    max-width: 480px;
+  }
 }
