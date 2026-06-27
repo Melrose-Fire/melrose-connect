@@ -16,8 +16,10 @@ body {
   padding: 20px 10px;
 }
 
-.logo {
-  font-size: 50px;
+.logo img {
+  width: 90px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 h1 {
