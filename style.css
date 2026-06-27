@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 520px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  padding: 20px 10px;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+p {
+  color: #bdbdbd;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: block;
+  padding: 14px;
+  background: #1f1f1f;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #2a2a2a;
+}
+
+.primary {
+  background: #b30000;
+  font-weight: bold;
+}
+
+.donate {
+  background: #1e5eff;
+}
