@@ -67,3 +67,67 @@ p {
 .recruit:hover {
   background: #d98200;
 }
+/* ====================== RESPONSIVE DESIGN ====================== */
+
+/* Make everything scale properly on phones and tablets */
+.container {
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+.card {
+    padding: 25px 15px;
+    margin: 10px auto;
+    max-width: 480px;
+    width: 100%;
+}
+
+/* Make buttons bigger and easier to tap on mobile */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    margin: 12px 0;
+    font-size: 17px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Adjust heading sizes */
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Tablet & larger phones */
+@media (min-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .btn {
+        font-size: 18px;
+        padding: 18px 20px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+}
